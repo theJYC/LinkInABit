@@ -6,7 +6,7 @@
 
 `circleBack` is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
 
-Given its utility, `circleBack` is **a tool that serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels. \n
+Given its utility, `circleBack` is **a tool that serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels.\
 Other than the above target demographics, `circleBack` may also be leveraged as a 'networking journal' for the broader population who similarly make use of LinkedIn as a primary professional networking platform.
 
 `circleBack` can be downloaded via Chrome Web Store, or NPM.
@@ -18,11 +18,11 @@ Stack: HTML/CSS, JavaScript, React.js (React Router, Context API), Bootstrap, an
 
 ### HTML/CSS & Bootstrap
 
-Bootstrap, as a CSS framework, was utilised for its ease of responsive UI development.
+Bootstrap, Tw CSS framework, was utilised for its ease of responsive UI development.
 
 ### React.js
 
-React Router and Context API were utilised for routing and state management, respectively.
+[React Router](https://reactrouter.com/web/api/Router) and [Context API](https://github.com/jinyoungch0i/react-context) were utilised for routing and state management, respectively.
 
 ### chrome.storage API
 
