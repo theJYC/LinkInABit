@@ -11,10 +11,14 @@ Other than the above target demographics, `circleBack` may be leveraged as a 'ne
 [Download via Chrome Store](https://chrome.google.com/webstore/category/extensions) | [Install via NPM](https://www.npmjs.com/search?q=circleback)
 
 ## Technologies
-Stack: HTML/CSS, JavaScript, React.js (Router, Context API), and chrome.storage API.
+Stack: HTML/CSS, JavaScript, React.js (React Router, Context API), Bootstrap, and chrome.storage API.
 
-In order to develop a performant SPA, React.js was utilised for routing (React-Router) and state management (Context API).
+### HTML/CSS & Bootstrap
 
+Bootstrap as a CSS framework was utilised for its ease of responsive UI development.
 
+### React.js
+
+React Router and Context API were utilised for routing and state management, respectively.
 
 
