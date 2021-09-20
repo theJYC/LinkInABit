@@ -3,8 +3,8 @@
 ## Summary
 `circleBack` is an open-source Chrome Extension that allows users to keep an accessible record of LinkedIn contacts to reach out to.
 
-Given the nature of the extension, **`circleBack` is intended to be of particular use to recruiters, job hunters, and salespeople**.
-While the above demographics rely most heavily on their use of LinkedIn, `circleBack` could serve as a 'networking journal' for the broader population.
+Given its utility, `circleBack` is **a tool that serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels.
+Other than the above target demographics, `circleBack` may be leveraged as a 'networking journal' for the broader population.
 
 `circleBack` can be downloaded via Chrome Web Store, or NPM.
 
