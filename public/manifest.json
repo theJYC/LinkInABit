@@ -1,0 +1,7 @@
+{
+    "manifest_version": 3,
+    "name": "circleBack",
+    "description": "Chrome Extension for trackable LinkedIn networking",
+    "version": "1.0.0",
+    "homepage_url": "https://github.com/jinyoungch0i",
+}
