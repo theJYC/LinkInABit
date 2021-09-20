@@ -8,10 +8,12 @@ Other than the above target demographics, `circleBack` may be leveraged as a 'ne
 
 `circleBack` can be downloaded via Chrome Web Store, or NPM.
 
-[Link to Chrome Store](https://chrome.google.com/webstore/category/extensions) [Link to NPM](https://www.npmjs.com/search?q=circleback)
+[Download via Chrome Store](https://chrome.google.com/webstore/category/extensions) | [Install via NPM](https://www.npmjs.com/search?q=circleback)
 
 ## Technologies
-`circleBack` is built with HTML/CSS, JavaScript, React.js (React-Router, Context API), and chrome.storage API.
+Stack: HTML/CSS, JavaScript, React.js (Router, Context API), and chrome.storage API.
+
+In order to develop a performant SPA, React.js was utilised for routing (React-Router) and state management (Context API).
 
 
 
