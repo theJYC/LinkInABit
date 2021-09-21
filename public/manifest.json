@@ -8,9 +8,9 @@
         "default_title": "Toggle circleBack"
     },
     "icons": {
-        "16" : "",
-        "48" : "",
-        "128" : ""
+        "16" : "icons/icon16.png",
+        "48" : "icons/icon192.png",
+        "128" : "icons/icon512.png"
     }
 
 }
