@@ -23,7 +23,7 @@ Stack: HTML/CSS, JavaScript, React.js (React Router, Context API), Bootstrap, an
 
 ### React.js
 
-[React Router](https://reactrouter.com/web/api/Router) and [Context API](https://github.com/jinyoungch0i/react-context) were utilised for routing and state management, respectively.
+[React Router](https://reactrouter.com/web/api/Router) and [Context API](https://github.com/jinyoungch0i/react-context) were utilised for client-side SPA routing and state management, respectively.
 
 ### chrome.storage API
 
