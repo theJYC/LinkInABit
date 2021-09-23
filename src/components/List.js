@@ -15,6 +15,7 @@ const List = props => {
                 key={contact.id}
                 name={contact.fullName}
                 company={contact.companyName}
+                contactPhotoURL={contact.contactPhotoURL}
                 companyLogoURL={contact.companyLogoURL}
                 profileURL={contact.profileURL}
                 contactInfo={contact.contactInfoLink}
