@@ -16,3 +16,12 @@ h1 {
     color: white;
 
 }
+
+/*alternating grey/white color for list items*/
+.row :nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+.row :nth-child(even) {
+    background-color: white;
+}

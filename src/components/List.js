@@ -19,9 +19,9 @@ const List = props => {
         )
     })
     return (
-        <>
+        <div class="row">
             {contactsComponents}
-        </>
+        </div>
     )
 }
 
