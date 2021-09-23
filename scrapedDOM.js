@@ -54,3 +54,6 @@ const currentCompanyURL = currentCompanyInProfile.href
 console.log(currentCompanyURL) // "https://www.linkedin.com/company/kaikustartups/"
 
 //implementation: make it into href value for <companyNameText>
+
+/* #7 company logo image url */
+const companyLogo = document.querySelector(`img[alt="${companyNameText}"]`)
