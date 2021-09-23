@@ -1,20 +1,15 @@
 body {
-    /*be sure to revisit font that is clean and on-brand!*/
-    font-family: Arial;
+    font-family: var(--bs-font-sans-serif);
 }
 
 header {
-    /*gray background with centered white header*/
-    background-color: #0077b5;
-    display: flex;
-    justify-content: left;
+    color: black;
+    padding: 10px 0px 5px 0px;
 }
 
 h1 {
     /*setting sample fontsize for development*/
-    font-size: 14px;
-    color: white;
-
+    font-size: 10px;
 }
 
 /*alternating grey/white color for list items*/
