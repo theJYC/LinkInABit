@@ -1,16 +1,21 @@
 import React from "react"
 
-//Contact component is mapped out through props passed down from App:
+//Contact component used as template for each profile:
 import Contact from "./Contact"
 
 
 const List = props => {
+
+    // mapped out using the key-value attributes of the contacts.js array of objs:
     const contactsComponents = props.contacts.map(contact => {
         return (
             <Contact
+                {/* paying special attention to ordering of props */}
+                {/* as order of appearance/usage in Contact */}
                 key={contact.id}
                 name={contact.fullName}
                 company={contact.companyName}
+                companyLogoURL={contact.companyLogoURL}
                 profileURL={contact.profileURL}
                 contactInfo={contact.contactInfoLink}
                 curentTitle={contact.currentTitle}
@@ -19,7 +24,9 @@ const List = props => {
         )
     })
     return (
+        {/* applying Bootstrap "row" class & conditionally rendering style through custom CSS */}
         <div class="row">
+            {/* no. of objs will be dynamically updated and mapped in contactsComponents */}
             {contactsComponents}
         </div>
     )
