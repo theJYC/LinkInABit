@@ -59,3 +59,8 @@ console.log(currentCompanyURL) // "https://www.linkedin.com/company/kaikustartup
 const companyLogo = document.querySelector(`img[alt="${companyNameText}"]`)
 const companyLogoURL = companyLogo.src
 console.log(companyLogoURL) // "https://media-exp1.licdn.com/dms/image/C4E0BAQFp5oR26Cs8LA/company-logo_100_100/0/1601595083883?e=1640217600&v=beta&t=MeqevpuNk8ynARXKxB1biQhecBRQoaZH3Ug2N8F-2Ek"
+
+/* BONUS: contactPhotoURL */
+const contactPhoto = document.querySelector(`img[title="${contactNameText}"`)
+const contactPhotoURL = contactPhoto.src
+console.log(contactPhotoURL) // "https://media-exp1.licdn.com/dms/image/C5603AQE7tmbble3OQg/profile-displayphoto-shrink_200_200/0/1631760994434?e=1637798400&v=beta&t=6X66AqBBBrLxpjPO4y7GcJ8voie5JWArdPStfKcJ28Y"
