@@ -2,3 +2,16 @@ body {
     width: 400px;
     height: 600px;
 }
+
+header {
+    /*gray background with centered white header*/
+    background-color: #515C6E;
+    color: #FFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    /*setting sample fontsize for development*/
+    font-size: 16px;
+}
