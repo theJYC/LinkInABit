@@ -1,17 +1,18 @@
 body {
-    width: 400px;
-    height: 600px;
+    /*be sure to revisit font that is clean and on-brand!*/
+    font-family: Arial;
 }
 
 header {
     /*gray background with centered white header*/
-    background-color: #515C6E;
-    color: #FFFFF;
+    background-color: #0077b5;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 h1 {
     /*setting sample fontsize for development*/
-    font-size: 16px;
+    font-size: 14px;
+    color: white;
+
 }
