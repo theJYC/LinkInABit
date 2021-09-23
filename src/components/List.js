@@ -1,17 +1,27 @@
 import React from "react"
 
-//bringing in manually recorded array of contacts
-import sampleContacts from "../contacts.js"
+//Contact component is mapped out through props passed down from App:
+import Contact from "./Contact"
 
-const List = () => {
+
+const List = props => {
+    const contactsComponents = props.contacts.map(contact => {
+        return (
+            <Contact
+                key={contact.id}
+                name={contact.fullName}
+                company={contact.companyName}
+                profileURL={contact.profileURL}
+                contactInfo={contact.contactInfoLink}
+                curentTitle={contact.currentTitle}
+                companyLinkedIn={contact.companyLinkedInURL}
+            />
+        )
+    })
     return (
-        <div className="listContainer">
-            <p>Item</p>
-            <p>Item</p>
-            <p>Item</p>
-            <p>Item</p>
-            <p>Item</p>
-        </div>
+        <>
+            {contactsComponents}
+        </>
     )
 }
 
