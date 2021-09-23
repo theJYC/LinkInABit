@@ -57,3 +57,5 @@ console.log(currentCompanyURL) // "https://www.linkedin.com/company/kaikustartup
 
 /* #7 company logo image url */
 const companyLogo = document.querySelector(`img[alt="${companyNameText}"]`)
+const companyLogoURL = companyLogo.src
+console.log(companyLogoURL) // "https://media-exp1.licdn.com/dms/image/C4E0BAQFp5oR26Cs8LA/company-logo_100_100/0/1601595083883?e=1640217600&v=beta&t=MeqevpuNk8ynARXKxB1biQhecBRQoaZH3Ug2N8F-2Ek"
