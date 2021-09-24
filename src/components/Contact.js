@@ -22,11 +22,11 @@ const Contact = props => {
 
     return (
         <li className="list-group-item d-flex flex-row">
-        {/* three column layout: photos | name & title | toggle/checkbox */}
+        {/* two column layout: photo & logo | name & title and contact icon & checkbox */}
             <div
                 className="d-flex flex-column col-4 gap-3"
             >
-                {/*profile picture as shown on in/profile link*/}
+                {/* profile picture as shown on in/profile link */}
                 <img
                     src={props.contactPhotoURL}
                     alt={props.fullName}
@@ -34,7 +34,7 @@ const Contact = props => {
 
                 />
 
-                {/*clickable company logo*/}
+                {/* clickable company logo */}
                 <a href={props.companyLinkedIn}>
                     <img
                         style={companyLogo}
@@ -49,7 +49,7 @@ const Contact = props => {
             <div
                 className="d-flex flex-column col-8"
             >
-                {/*hyperlink to profile link on fullName*/}
+                {/* hyperlink to profile link on fullName */}
                 <a
                     style={nameStyle}
                     className="d-flex align-items-start justify-content-center"
@@ -86,7 +86,7 @@ const Contact = props => {
                 <i
                     className="far fa-paper-plane fa-2x d-flex justify-content-center">
                 </i>
-                {/* checkbox to indicate followed-up/not*/}
+                {/* checkbox to indicate followed-up/not */}
                 <input
                     style={checkBoxStyle}
                     className="form-check-input"
