@@ -2,13 +2,6 @@ import React from "react"
 
 const Contact = props => {
 
-    // container to hold the vertical column of profile pic and company logo
-
-
-    const nameAndTitleStyle = {
-
-    }
-
     //resize to ~50% dimension of contactPhoto
     const companyLogo = {
         width: "65%",
@@ -20,6 +13,11 @@ const Contact = props => {
         textDecoration: "none",
         color: "black",
         fontWeight: "normal",
+    }
+
+    const checkBoxStyle = {
+        width: "6vw",
+        height: "3vh"
     }
 
     return (
@@ -80,12 +78,23 @@ const Contact = props => {
                         {props.company}
                     </p>
                 </a>
-            </div>
-
-            <div
-                className="d-flex flex-column col-5"
-            >
-
+                {/* div to hold contact icon and checkbox */}
+                <div
+                    className="d-flex flex-direction-row justify-content-evenly"
+                >
+                {/* contact icon from fontawesome */}
+                <i
+                    className="far fa-paper-plane fa-2x d-flex justify-content-center">
+                </i>
+                {/* checkbox to indicate followed-up/not*/}
+                <input
+                    style={checkBoxStyle}
+                    className="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                />
+                </div>
             </div>
         </li>
     )

@@ -12,12 +12,3 @@ h1 {
     /*setting sample fontsize for development*/
     font-size: 10px;
 }
-
-/*alternating grey/white color for list items*/
-.row :nth-child(odd) {
-    background-color: #f7f7f7;
-}
-
-.row :nth-child(even) {
-    background-color: white;
-}
