@@ -50,4 +50,4 @@ The data is stored into an object structure, as below:
 
 `circleBack` requires the interaction between its two content scripts, for which the following APIs were utilised:
 - [chrome.storage](https://developer.chrome.com/docs/extensions/reference/storage/) API was used to save desired LinkedIn contacts locally
-- [chrome.runtime] API was used to relay data from the LinkedIn page to the rendered UI in the extension's popup window
+- [chrome.runtime](https://developer.chrome.com/docs/extensions/mv3/messaging/#simple) API was used to relay data from the LinkedIn page to the rendered UI in the extension's popup window
