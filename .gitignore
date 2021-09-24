@@ -24,3 +24,6 @@ yarn-error.log*
 
 # ideas
 iterations.md
+
+# scraper
+DOMScraper.js
