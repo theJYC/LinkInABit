@@ -1,5 +1,7 @@
 # circleBack
 
+<img src="/public/changelog/ui_5_magnified.png" alt="circleBack UI demo" title="circleBack UI demo" height="200">
+
 ## Summary
 
 `circleBack is currently in active development`
