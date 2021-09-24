@@ -12,7 +12,7 @@ import contactsData from "./contacts.js"
 
 const App = () => {
     return (
-        <div className="container col-12 col-sm-6">
+        <div className="container col-12">
             <Header />
             <List contacts={contactsData}/>
             <Footer />

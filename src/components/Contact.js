@@ -71,6 +71,7 @@ const Contact = props => {
                     @
                 </p>
                 <a
+                    href={props.companyLinkedIn}
                    className="d-flex justify-content-center text-secondary"
                 >
                     <p

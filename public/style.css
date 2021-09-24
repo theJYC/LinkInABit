@@ -1,5 +1,6 @@
 body {
     font-family: var(--bs-font-sans-serif);
+    width: 450px;
 }
 
 header {
