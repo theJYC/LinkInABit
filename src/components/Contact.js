@@ -65,6 +65,20 @@ const Contact = props => {
                 >
                     {props.currentTitle}
                 </p>
+                <p
+                    className="d-flex justify-content-center text-secondary"
+                >
+                    @
+                </p>
+                <a
+                   className="d-flex justify-content-center text-secondary"
+                >
+                    <p
+                        className="d-flex justify-content-center text-primary"
+                    >
+                        {props.company}
+                    </p>
+                </a>
             </div>
 
             <div
