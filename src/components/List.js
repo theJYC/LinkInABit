@@ -19,7 +19,7 @@ const List = props => {
                 companyLogoURL={contact.companyLogoURL}
                 profileURL={contact.profileURL}
                 contactInfo={contact.contactInfoLink}
-                curentTitle={contact.currentTitle}
+                currentTitle={contact.currentTitle}
                 companyLinkedIn={contact.companyLinkedInURL}
             />
         )

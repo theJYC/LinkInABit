@@ -9,9 +9,10 @@ const Contact = props => {
 
     }
 
+    //resize to ~50% dimension of contactPhoto
     const companyLogo = {
         width: "65%",
-        height: "65%"
+        margin: "0 auto",
     }
 
     const nameStyle = {
@@ -23,38 +24,47 @@ const Contact = props => {
 
     return (
         <li className="list-group-item d-flex flex-row">
+        {/* three column layout: photos | name & title | toggle/checkbox */}
             <div
-                className="d-flex flex-column col-4"
+                className="d-flex flex-column col-4 gap-3"
             >
                 {/*profile picture as shown on in/profile link*/}
                 <img
                     src={props.contactPhotoURL}
                     alt={props.fullName}
-                    className="order-0"
+                    className="order-0 rounded-circle"
 
                 />
 
-                {/*company logo*/}
-                <img
-                    style={companyLogo}
-                    src={props.companyLogoURL}
-                    alt={props.fullName}
-                    className="order-1"
+                {/*clickable company logo*/}
+                <a href={props.companyLinkedIn}>
+                    <img
+                        style={companyLogo}
+                        src={props.companyLogoURL}
+                        alt={props.fullName}
+                        className="d-flex order-1 rounded"
 
-                />
-
+                    />
+                </a>
             </div>
-            {/*hyperlink to profile link on fullName*/}
+
             <div
                 className="d-flex flex-column col-8"
             >
+                {/*hyperlink to profile link on fullName*/}
                 <a
                     style={nameStyle}
-                    className="d-flex align-items-start"
+                    className="d-flex align-items-start justify-content-center"
                     href={props.profileURL}
                 >
                     {props.name}
                 </a>
+                {/*para tag to display profile's title/position */}
+                <p
+                    className="d-flex justify-content-center text-secondary"
+                >
+                    {props.currentTitle}
+                </p>
             </div>
 
             <div
