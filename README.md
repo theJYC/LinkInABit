@@ -21,24 +21,27 @@ Stack: HTML/CSS, JavaScript, React.js (Context API), Bootstrap, and Chrome APIs.
 
 ### HTML/CSS & Bootstrap
 
-[Bootstrap](https://getbootstrap.com/) v5 was utilised for its ease of responsive UI development.
+[Bootstrap v5](https://getbootstrap.com/) was utilised as the chosen CSS framework for responsive UI development.
+<br/>
+On instances where styling within JSX resulted in messy code, custom CSS was defined in `public/style.css`
 
 ### JavaScript
 
 JavaScript (ES6) was used to grab key information from a LinkedIn profile's page and relay the data to the extension.
-The data is stored into an object structure, as below:
+<br/>
+The data was stored as the below object notation:
 
 ```js
     {
         id: 2,
         fullName: "Fredrick Thompson",
         companyName: "Duolingo",
-        contactPhotoURL: "https://media-exp1.licdn.com/dms/image/C4D03AQHP0cXj4vHuKQ/profile-displayphoto-shrink_200_200/0/1541293291804?e=1637798400&v=beta&t=w2UPH4hNjZbVN_ZnFYeFhHuxKLMl7lm-eqB39UuYZmo",
+        contactPhotoURL: "https://some_path_to_profile_picture_url",
         profileURL: "https://www.linkedin.com/in/fredrick-thompson-875520174/",
-        contactInfoLink: "https://www.linkedin.com/in/fredrick-thompson-875520174/detail/contact-info/",
+        contactInfoLink: `${profileURL}detail/contact-info/`,
         currentTitle: "Product Manager",
         companyLinkedInURL: "https://www.linkedin.com/company/duolingo/",
-        companyLogoURL: "https://media-exp1.licdn.com/dms/image/C4D0BAQGXpleTj4FpbQ/company-logo_100_100/0/1627908234168?e=1640217600&v=beta&t=Lf1_rh0GK-wBeGwVZiaMGt7B0RGBJAjn2EA-oLPriZc",
+        companyLogoURL: "https://some_path_to_company_logo_img",
     }
 ```
 
@@ -49,5 +52,5 @@ The data is stored into an object structure, as below:
 ### Chrome APIs
 
 `circleBack` requires the interaction between its two content scripts, for which the following APIs were utilised:
-- [chrome.storage](https://developer.chrome.com/docs/extensions/reference/storage/) API was used to save desired LinkedIn contacts locally
-- [chrome.runtime](https://developer.chrome.com/docs/extensions/mv3/messaging/#simple) API was used to relay data from the LinkedIn page to the rendered UI in the extension's popup window
+- [chrome.storage](https://developer.chrome.com/docs/extensions/reference/storage/) API to save LinkedIn contacts locally
+- [chrome.runtime](https://developer.chrome.com/docs/extensions/mv3/messaging/#simple) API to relay data from the LinkedIn page to the rendered UI in the extension's popup window
