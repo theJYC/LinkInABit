@@ -1,6 +1,6 @@
 # circleBack
 
-<img src="/public/changelog/ui_5_magnified.png" alt="circleBack UI demo" title="circleBack UI demo">
+<img src="/public/changelog/README_UI.png" alt="circleBack UI demo" title="circleBack UI demo">
 
 ## Summary
 
