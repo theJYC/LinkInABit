@@ -3,6 +3,7 @@ import React from "react"
 const Header = () => {
 
     //style object for the add-contact and save-html icons
+    //so that they don't render with default underline with Bootstrap
     const headerIconStyle = {
         textDecoration : "none",
     }
@@ -34,7 +35,7 @@ const Header = () => {
                     href="#"
                     style={headerIconStyle}
                 >
-                    {/* icon: fa-user imported from fontawesome */}
+                    {/* icon: fa-share-square imported from fontawesome */}
                     <i
                         className="d-flex fas fa-share-square fa-lg me-3 link-primary">
                     </i>

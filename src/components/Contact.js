@@ -17,7 +17,7 @@ const Contact = props => {
 
     const checkBoxStyle = {
         width: "6vw",
-        height: "3vh"
+        height: "3.75vh"
     }
 
     return (
@@ -80,20 +80,20 @@ const Contact = props => {
                 </a>
                 {/* div to hold contact icon and checkbox */}
                 <div
-                    className="d-flex flex-direction-row justify-content-evenly"
+                    className="d-flex flex-direction-row justify-content-evenly pt-1"
                 >
-                {/* contact icon from fontawesome */}
-                <i
-                    className="far fa-paper-plane fa-2x d-flex justify-content-center">
-                </i>
-                {/* checkbox to indicate followed-up/not */}
-                <input
-                    style={checkBoxStyle}
-                    className="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                />
+                    {/* contact icon from fontawesome */}
+                    <i
+                        className="far fa-paper-plane fa-2x d-flex justify-content-center">
+                    </i>
+                    {/* checkbox to indicate followed-up/not */}
+                    <input
+                        style={checkBoxStyle}
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckDefault"
+                    />
                 </div>
             </div>
         </li>

@@ -11,8 +11,18 @@ import contactsData from "./contacts.js"
 
 
 const App = () => {
+
+    //custom styling to override Bootstrap's default flex width
+    //this width determines the width of popup window:
+    const fixedWidth = {
+        width: "450px"
+    }
+
     return (
-        <div className="container col-12">
+        <div
+            style={fixedWidth}
+            className="container col-12"
+        >
             <Header />
             <List contacts={contactsData}/>
             <Footer />
