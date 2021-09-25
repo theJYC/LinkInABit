@@ -16,6 +16,8 @@ Other than the above target demographics, `circleBack` may also be leveraged as 
 
 [Download via Chrome Store](https://chrome.google.com/webstore/category/extensions) | [Install via NPM](https://www.npmjs.com/search?q=circleback)
 
+P.S. Please refer to [changelog](https://github.com/jinyoungch0i/circleBack/tree/main/public/changelog) to follow ongoing UI iterations.
+
 ## Technologies
 Stack: HTML/CSS, JavaScript, React.js (Context API), Bootstrap, and Chrome APIs.
 
