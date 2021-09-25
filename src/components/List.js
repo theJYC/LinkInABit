@@ -26,7 +26,7 @@ const List = props => {
     })
 
     return (
-        <ul className="list-group">
+        <ul className="d-flex flex-column-reverse list-group">
             {/* no. of objs will be dynamically updated and mapped in contactsComponents */}
             {contactsComponents}
         </ul>
