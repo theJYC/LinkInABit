@@ -11,7 +11,7 @@ const sampleContacts = [
         contactInfoLink: "https://www.linkedin.com/in/jinhyuk-ryan-choi/detail/contact-info/",
         currentTitle: "Investment Banking Analyst",
         companyLinkedInURL: "https://www.linkedin.com/company/kaikustartups/",
-        companyLogoURL: "https://media-exp1.licdn.com/dms/image/C4E0BAQFp5oR26Cs8LA/company-logo_100_100/0/1601595083883?e=1640217600&v=beta&t=MeqevpuNk8ynARXKxB1biQhecBRQoaZH3Ug2N8F-2Ek",
+        companyLogoURL: "https://media-exp1.licdn.com/dms/image/C4D0BAQEe70tdxBRJbQ/company-logo_200_200/0/1589411106054?e=1640822400&v=beta&t=M05EmJSckcEg56rnXWR0bziE4FUb82leqJG2le-2nzo",
     },
     {
         id: 2,
@@ -42,7 +42,7 @@ const sampleContacts = [
         contactPhotoURL: "https://media-exp1.licdn.com/dms/image/C4D03AQFQH3oPq9NA9A/profile-displayphoto-shrink_200_200/0/1610889658104?e=1637798400&v=beta&t=qMFNW3_qCBtbn-b1Qaj05THDMWCP5npFKgPQz4H4Q_U",
         profileURL: "https://www.linkedin.com/in/oliverwhittam/",
         contactInfoLink: "https://www.linkedin.com/in/oliverwhittam/contact-info/",
-        currentTitle: "PWM Analyst",
+        currentTitle: "Payroll Analyst",
         companyLinkedInURL: "https://www.linkedin.com/company/deloitte/",
         companyLogoURL: "https://media-exp1.licdn.com/dms/image/C4E0BAQHda-o9KT2w5Q/company-logo_100_100/0/1625689676984?e=1640217600&v=beta&t=wQBtyDNavw6qtow7Fs7v5t5S7W8icnDKQI9zMSS6ehs",
     }

@@ -7,7 +7,7 @@ import Footer from "./components/Footer"
 
 //bringing in manually recorded array of contacts
 //to send down to List and Links as props
-import contactsData from "./contacts.js"
+import contactsData from "./contactsData.js"
 
 
 const App = () => {
