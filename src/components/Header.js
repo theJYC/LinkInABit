@@ -1,6 +1,13 @@
 import React from "react"
 
+import logo from "../assets/icon32.png"
+
 const Header = () => {
+
+    //style object for the "cB" logo next to circleBack title
+    const headerLogoStyle = {
+        height: 32
+    }
 
     //style object for the add-contact and save-html icons
     //so that they don't render with default underline with Bootstrap
@@ -8,15 +15,28 @@ const Header = () => {
         textDecoration : "none",
     }
 
+
     return (
         <header
             className="d-flex bg-dark text-white flex-direction-row align-items-center justify-content-between"
         >
-            <h1
-                className="d-flex order-0"
-            >
-                circleBack
-            </h1>
+            {/* container to hold extension's logo "cB" and title "circleBack" respectively */}
+            <div className="container d-flex flex-direction-row justify-content-start">
+
+                {/* icon, re-sized */}
+                <img
+                    src={logo}
+                    alt="circleBack logo"
+                    style={headerLogoStyle}
+                    className="d-flex pt-1 me-1"
+                />
+
+                <h1
+                    className="d-flex order-0"
+                >
+                    circleBack
+                </h1>
+            </div>
 
             <div className="container d-flex flex-direction-row justify-content-end">
 
