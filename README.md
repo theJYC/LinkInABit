@@ -31,6 +31,7 @@ On instances where styling within JSX resulted in messy code, custom CSS was def
 
 JavaScript (ES6) was used to grab key information from a LinkedIn profile's page and relay the data to the extension.
 <br/>
+
 The data was stored as the below object notation:
 
 ```js
