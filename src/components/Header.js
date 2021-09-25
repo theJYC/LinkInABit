@@ -17,26 +17,29 @@ const Header = () => {
                 circleBack
             </h1>
 
-            {/* clickable "add contact" icon to initiate scraping of the LinkedIn profile page */}
-            <a
-                href="#"
-                style={headerIconStyle}
-            >
-                {/* icon: fa-user imported from fontawesome */}
-                <i
-                    className="d-flex fas fa-user-plus fa-lg me-3 mb-1 link-warning">
-                </i>
-            </a>
-        {/* clickable "export profiles" icon to initiate generation of profiles.html file */}
-            <a
-                href="#"
-                style={headerIconStyle}
-            >
-                {/* icon: fa-user imported from fontawesome */}
-                <i
-                    className="d-flex fas fa-share-square fa-lg me-3 mb-1 link-success">
-                </i>
-            </a>
+            <div className="container d-flex flex-direction-row justify-content-end">
+
+                {/* clickable "add contact" icon to initiate scraping of the LinkedIn profile page */}
+                <a
+                    href="#"
+                    style={headerIconStyle}
+                >
+                    {/* icon: fa-user imported from fontawesome */}
+                    <i
+                        className="d-flex fas fa-user-plus fa-lg me-4 mb-1 link-success">
+                    </i>
+                </a>
+                {/* clickable "export profiles" icon to initiate generation of profiles.html file */}
+                <a
+                    href="#"
+                    style={headerIconStyle}
+                >
+                    {/* icon: fa-user imported from fontawesome */}
+                    <i
+                        className="d-flex fas fa-share-square fa-lg me-3 link-primary">
+                    </i>
+                </a>
+            </div>
         </header>
     )
 }
