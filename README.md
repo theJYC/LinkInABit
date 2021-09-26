@@ -1,4 +1,4 @@
-<img src="/public/icons/apple-touch-icon.png" alt="circleBack Logo: 'cB'" title="circleBack logo" width="auto">
+<img src="/public/icons/icon32.png" alt="circleBack Logo: 'cB'" title="circleBack logo" width="auto">
 
 # circleBack
 
