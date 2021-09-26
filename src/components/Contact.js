@@ -84,7 +84,7 @@ const Contact = props => {
                 </div>
                 {/* div to hold contact icon and checkbox */}
                 <div
-                    className="d-flex flex-direction-row justify-content-evenly pt-3 pb-2 me-3"
+                    className="d-flex flex-direction-row justify-content-evenly pt-3 pb-2 me-2"
                 >
                     {/* contact icon from fontawesome */}
                     <i
