@@ -1,5 +1,8 @@
 import React from "react"
 
+//selectively importing Font Awesome paperplane icon via react-icons
+import { FaRegPaperPlane as ContactInfoIcon } from "react-icons/fa"
+
 const Contact = props => {
 
     //resize to ~50% dimension of contactPhoto
@@ -13,11 +16,6 @@ const Contact = props => {
         textDecoration: "none",
         color: "black",
         fontWeight: "normal",
-    }
-
-    //overriding default Bootstrap styling for paper aeroplane icon left of checkbox
-    const contactIconStyle = {
-        textDecoration: "none",
     }
 
     //checkbox to override default Bootstrap marginTop, and tailouring square sizing
@@ -100,14 +98,14 @@ const Contact = props => {
                     {/* clickable contact-info (paper aeroplane) icon */}
                     <a
                         href={props.contactInfo}
-                        style={contactIconStyle}
                         className="text-secondary"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <i
-                            className="far fa-paper-plane fa-2x d-flex justify-content-center">
-                        </i>
+                        <ContactInfoIcon
+                            size="32"
+                            className="d-flex justify-content-center text-decoration-none"
+                        />
                     </a>
                     {/* checkbox to indicate followed-up/not */}
                     <input

@@ -1,5 +1,8 @@
 import React from "react"
 
+//selectively named importing Font Awesome icons via react-icons
+import { FaUserPlus as AddContactIcon, FaRegShareSquare as ExportProfilesListIcon } from "react-icons/fa"
+
 import logo from "../assets/icon32.png"
 
 const Header = () => {
@@ -7,12 +10,6 @@ const Header = () => {
     //style object for the "cB" logo next to circleBack title
     const headerLogoStyle = {
         height: 32
-    }
-
-    //style object for the add-contact and save-html icons
-    //so that they don't render with default underline with Bootstrap
-    const headerIconStyle = {
-        textDecoration : "none",
     }
 
     //style object to fix the font-size of "circleBack",
@@ -49,22 +46,22 @@ const Header = () => {
                 {/* clickable "add contact" icon to initiate scraping of the LinkedIn profile page */}
                 <a
                     href="#"
-                    style={headerIconStyle}
                 >
                     {/* icon: fa-user imported from fontawesome */}
-                    <i
-                        className="d-flex fas fa-user-plus fa-lg me-4 mb-1 link-success">
-                    </i>
+                    <AddContactIcon
+                        size="27.5"
+                        className="d-flex me-4 mb-1 link-success text-decoration-none"
+                    />
                 </a>
                 {/* clickable "export profiles" icon to initiate generation of profiles.html file */}
                 <a
                     href="#"
-                    style={headerIconStyle}
                 >
                     {/* icon: fa-share-square imported from fontawesome */}
-                    <i
-                        className="d-flex fas fa-share-square fa-lg me-3 link-primary">
-                    </i>
+                    <ExportProfilesListIcon
+                        size="27.5"
+                        className="d-flex me-2 link-primary text-decoration-none"
+                    />
                 </a>
             </div>
         </header>
