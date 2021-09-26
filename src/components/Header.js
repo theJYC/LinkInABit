@@ -15,6 +15,12 @@ const Header = () => {
         textDecoration : "none",
     }
 
+    //style object to fix the font-size of "circleBack",
+    //overriding Bootstrap's default responsive behaviour
+    const fixedHeaderFontStyle = {
+        fontSize: "28.75px"
+    }
+
 
     return (
         <header
@@ -32,7 +38,7 @@ const Header = () => {
                 />
 
                 <h1
-                    className="d-flex order-0"
+                    style={fixedHeaderFontStyle}
                 >
                     circleBack
                 </h1>
