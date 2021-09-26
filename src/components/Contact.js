@@ -11,6 +11,10 @@ const Contact = props => {
         marginRight: 0
     }
 
+    const contactPhotoStyle = {
+        width: 150,
+    }
+
     const nameStyle = {
         padding: 2.5,
         textDecoration: "none",
@@ -33,12 +37,18 @@ const Contact = props => {
                 className="d-flex flex-column col-4 gap-3"
             >
                 {/* profile picture as shown on in/profile link */}
-                <img
-                    src={props.contactPhotoURL}
-                    alt={props.fullName}
-                    className="order-0 rounded-circle"
-
-                />
+                <a
+                    href={props.profileURL}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
+                    <img
+                        src={props.contactPhotoURL}
+                        alt={props.fullName}
+                        className="order-0 rounded-circle"
+                        style={contactPhotoStyle}
+                    />
+                </a>
             </div>
 
             <div
