@@ -19,18 +19,22 @@ Other than the above target demographics, `circleBack` may also be leveraged as 
 P.S. Please refer to [changelog](https://github.com/jinyoungch0i/circleBack/tree/main/public/changelog) to follow ongoing UI iterations.
 
 ## Technologies
-Stack: HTML/CSS, JavaScript, React.js (Context API), Bootstrap, and Chrome APIs.
+Stack: HTML/CSS, JavaScript, React, Bootstrap, and Chrome APIs.
+<br />
+
+Below is a detailed list of technologies used:
 
 ### HTML/CSS & Bootstrap
 
-[Bootstrap v5](https://getbootstrap.com/) was utilised as the chosen CSS framework for responsive UI development.
-<br/>
+Most of the HTML/CSS code was written in JSX; unless styling in JSX resulted in messy code. 
+<br />
 
-On instances where styling within JSX resulted in messy code, custom CSS was defined in `public/style.css`
+- [Bootstrap v5](https://getbootstrap.com/) was utilised as the chosen CSS framework for responsive UI development
+- [FontAwesome](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react) was utilised to enhance the UX with intuitive icons
 
 ### JavaScript
 
-JavaScript (ES6) was used to grab key information from a LinkedIn profile's page and relay the data to the extension.
+JavaScript (ES6) was used to grab key data from a LinkedIn profile page, which was then relayed to the extension's popup window (see [Chrome APIs](https://github.com/jinyoungch0i/circleBack#chrome-apis))
 <br/>
 
 The data was stored in the following object form:
@@ -51,15 +55,15 @@ The data was stored in the following object form:
 
 ### React.js
 
-React v17 was utilised in order to 
+React v17 was utilised, with a select number of technologies within the React ecosystem: 
 
 - [Context API](https://github.com/jinyoungch0i/react-context) was utilised for state management
 - [React-Icons](https://react-icons.github.io/react-icons/icons?name=fa) was utilised to selectively import (ES6) Font Awesome icons
-- [Hooks](https://reactjs.org/docs/hooks-reference.html) were utilised for accessing component life cycle methods & functional (over class-based) components
+- [Hooks](https://reactjs.org/docs/hooks-reference.html) were utilised for accessing component life cycle methods
 - [React-Router](https://reactrouter.com/) will be incorporated to allow performant routing on the client-side
 
 ### Chrome APIs
 
 `circleBack` requires the interaction between its two content scripts, for which the following APIs were utilised:
 - [chrome.storage](https://developer.chrome.com/docs/extensions/reference/storage/) to save LinkedIn contacts locally
-- [chrome.runtime](https://developer.chrome.com/docs/extensions/mv3/messaging/#simple) to relay data from the LinkedIn page to the rendered UI in the extension's popup window
+- [chrome.runtime](https://developer.chrome.com/docs/extensions/mv3/messaging/#simple) to relay data from LinkedIn profile to the extension's popup window
