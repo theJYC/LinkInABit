@@ -25,6 +25,7 @@ Stack: HTML/CSS, JavaScript, React.js (Context API), Bootstrap, and Chrome APIs.
 
 [Bootstrap v5](https://getbootstrap.com/) was utilised as the chosen CSS framework for responsive UI development.
 <br/>
+
 On instances where styling within JSX resulted in messy code, custom CSS was defined in `public/style.css`
 
 ### JavaScript
@@ -32,7 +33,7 @@ On instances where styling within JSX resulted in messy code, custom CSS was def
 JavaScript (ES6) was used to grab key information from a LinkedIn profile's page and relay the data to the extension.
 <br/>
 
-The data was stored as the below object notation:
+The data was stored in the following object form:
 
 ```js
     {
@@ -50,7 +51,12 @@ The data was stored as the below object notation:
 
 ### React.js
 
-[Context API](https://github.com/jinyoungch0i/react-context) was utilised for state management, and [React-Router](https://reactrouter.com/) will be incorporated to allow performant routing on the client-side.
+React v17 was utilised in order to 
+
+- [Context API](https://github.com/jinyoungch0i/react-context) was utilised for state management
+- [React-Icons](https://react-icons.github.io/react-icons/icons?name=fa) was utilised to selectively import (ES6) Font Awesome icons
+- [Hooks]() were utilised for functional programming and accessing life cycle methods
+- [React-Router](https://reactrouter.com/) will be incorporated to allow performant routing on the client-side
 
 ### Chrome APIs
 
