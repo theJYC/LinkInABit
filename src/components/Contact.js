@@ -51,6 +51,8 @@ const Contact = props => {
                     style={nameStyle}
                     className="d-flex align-items-start justify-content-center"
                     href={props.profileURL}
+                    target="_blank"
+                    rel="noreferrer noopener"
                 >
                     {props.name}
                 </a>
@@ -67,7 +69,11 @@ const Contact = props => {
                 </p>
                 <div className="d-flex flex-direction-row justify-content-center me-4">
                     {/* clickable company logo */}
-                    <a href={props.companyLinkedIn}>
+                    <a
+                        href={props.companyLinkedIn}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
                         <img
                             style={companyLogo}
                             src={props.companyLogoURL}
@@ -78,7 +84,9 @@ const Contact = props => {
                     {/* clickable companyName hyperlink */}
                     <a
                         href={props.companyLinkedIn}
-                       className="d-flex justify-content-center text-primary text-decoration-none mt-1"
+                        className="d-flex justify-content-center text-primary text-decoration-none mt-1"
+                        target="_blank"
+                        rel="noreferrer noopener"
                     >
                         <p>
                             {props.company}
@@ -94,6 +102,8 @@ const Contact = props => {
                         href={props.contactInfo}
                         style={contactIconStyle}
                         className="text-secondary"
+                        target="_blank"
+                        rel="noreferrer noopener"
                     >
                         <i
                             className="far fa-paper-plane fa-2x d-flex justify-content-center">
