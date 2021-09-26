@@ -72,17 +72,15 @@ const Contact = props => {
                             style={companyLogo}
                             src={props.companyLogoURL}
                             alt={props.fullName}
-                            className="d-flex rounded me-3"
+                            className="rounded me-3"
                         />
                     </a>
                     {/* clickable companyName hyperlink */}
                     <a
                         href={props.companyLinkedIn}
-                       className="d-flex justify-content-center text-secondary"
+                       className="d-flex justify-content-center text-primary text-decoration-none mt-1"
                     >
-                        <p
-                            className="d-flex justify-content-center text-primary mt-1"
-                        >
+                        <p>
                             {props.company}
                         </p>
                     </a>
@@ -91,11 +89,11 @@ const Contact = props => {
                 <div
                     className="d-flex flex-direction-row justify-content-evenly pt-3 pb-2 me-2"
                 >
-                    {/* contact icon from fontawesome */}
+                    {/* clickable contact-info (paper aeroplane) icon */}
                     <a
                         href={props.contactInfo}
                         style={contactIconStyle}
-                        className="text-primary"
+                        className="text-secondary"
                     >
                         <i
                             className="far fa-paper-plane fa-2x d-flex justify-content-center">

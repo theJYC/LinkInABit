@@ -15,7 +15,7 @@ const App = () => {
     //custom styling to override Bootstrap's default flex width
     //this width determines the width of popup window:
     const fixedWidth = {
-        maxWidth: "450px"
+        maxWidth: "450px",
     }
 
     return (
