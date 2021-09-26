@@ -17,8 +17,8 @@ const Contact = props => {
 
     //checkbox to override default Bootstrap marginTop, and tailouring square sizing
     const checkBoxStyle = {
-        width: "6.5vw",
-        height: "3.25vh",
+        width: 32,
+        height: 32,
         //marginTop is set to 1 (vs 0) in order to best align with contact icon (paper aeroplane)
         marginTop: 1,
     }
