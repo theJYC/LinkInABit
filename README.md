@@ -1,3 +1,5 @@
+<img src="/public/icons/apple-touch-icon.png" alt="circleBack Logo: 'cB'" title="circleBack logo" width="auto">
+
 # circleBack
 
 <img src="/public/changelog/README_UI.jpeg" alt="circleBack UI demo" title="circleBack UI demo" width="auto">
