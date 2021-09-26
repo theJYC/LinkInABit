@@ -59,7 +59,7 @@ React v17 was utilised, with a select number of technologies within the React ec
 
 - [Context API](https://github.com/jinyoungch0i/react-context) was utilised for state management
 - [React-Icons](https://react-icons.github.io/react-icons/icons?name=fa) was utilised to selectively import (ES6) Font Awesome icons
-- [Hooks](https://reactjs.org/docs/hooks-reference.html) were utilised for accessing component life cycle methods
+- [Hooks](https://reactjs.org/docs/hooks-reference.html) were utilised to access component life cycle methods in functional (vs. class-based) fashion
 - [React-Router](https://reactrouter.com/) will be incorporated to allow performant routing on the client-side
 
 ### Chrome APIs
