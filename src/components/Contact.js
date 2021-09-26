@@ -4,8 +4,8 @@ const Contact = props => {
 
     //resize to ~50% dimension of contactPhoto
     const companyLogo = {
-        width: "65%",
-        margin: "0 auto",
+        width: 40,
+        marginRight: 0
     }
 
     const nameStyle = {
@@ -36,17 +36,6 @@ const Contact = props => {
                     className="order-0 rounded-circle"
 
                 />
-
-                {/* clickable company logo */}
-                <a href={props.companyLinkedIn}>
-                    <img
-                        style={companyLogo}
-                        src={props.companyLogoURL}
-                        alt={props.fullName}
-                        className="d-flex order-1 rounded"
-
-                    />
-                </a>
             </div>
 
             <div
@@ -71,19 +60,31 @@ const Contact = props => {
                 >
                     @
                 </p>
-                <a
-                    href={props.companyLinkedIn}
-                   className="d-flex justify-content-center text-secondary"
-                >
-                    <p
-                        className="d-flex justify-content-center text-primary"
+                <div className="d-flex flex-direction-row justify-content-center me-4">
+                    {/* clickable company logo */}
+                    <a href={props.companyLinkedIn}>
+                        <img
+                            style={companyLogo}
+                            src={props.companyLogoURL}
+                            alt={props.fullName}
+                            className="d-flex rounded me-3"
+                        />
+                    </a>
+
+                    <a
+                        href={props.companyLinkedIn}
+                       className="d-flex justify-content-center text-secondary"
                     >
-                        {props.company}
-                    </p>
-                </a>
+                        <p
+                            className="d-flex justify-content-center text-primary mt-1"
+                        >
+                            {props.company}
+                        </p>
+                    </a>
+                </div>
                 {/* div to hold contact icon and checkbox */}
                 <div
-                    className="d-flex flex-direction-row justify-content-evenly pt-1"
+                    className="d-flex flex-direction-row justify-content-evenly pt-3 pb-2 me-3"
                 >
                     {/* contact icon from fontawesome */}
                     <i
