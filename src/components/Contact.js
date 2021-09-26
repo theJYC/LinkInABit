@@ -15,6 +15,11 @@ const Contact = props => {
         fontWeight: "normal",
     }
 
+    //overriding default Bootstrap styling for paper aeroplane icon left of checkbox
+    const contactIconStyle = {
+        textDecoration: "none",
+    }
+
     //checkbox to override default Bootstrap marginTop, and tailouring square sizing
     const checkBoxStyle = {
         width: 32,
@@ -70,7 +75,7 @@ const Contact = props => {
                             className="d-flex rounded me-3"
                         />
                     </a>
-
+                    {/* clickable companyName hyperlink */}
                     <a
                         href={props.companyLinkedIn}
                        className="d-flex justify-content-center text-secondary"
@@ -87,9 +92,15 @@ const Contact = props => {
                     className="d-flex flex-direction-row justify-content-evenly pt-3 pb-2 me-2"
                 >
                     {/* contact icon from fontawesome */}
-                    <i
-                        className="far fa-paper-plane fa-2x d-flex justify-content-center">
-                    </i>
+                    <a
+                        href={props.contactInfo}
+                        style={contactIconStyle}
+                        className="text-primary"
+                    >
+                        <i
+                            className="far fa-paper-plane fa-2x d-flex justify-content-center">
+                        </i>
+                    </a>
                     {/* checkbox to indicate followed-up/not */}
                     <input
                         style={checkBoxStyle}
