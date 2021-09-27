@@ -1,4 +1,4 @@
-# circleBack
+# circleBack for LinkedIn
 
 <img src="/public/changelog/demo.gif" alt="circleBack UI demo" title="circleBack UI demo" width="auto">
 
@@ -6,7 +6,7 @@
 
 `CURRENTLY IN ACTIVE DEVELOPMENT 🚀`
 
-`circleBack` is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
+`circleBack for LinkedIn (or circleBack)` is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
 
 Given its utility, `circleBack` is **a tool that primarily serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels.\
 <br />
