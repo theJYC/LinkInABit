@@ -26,7 +26,10 @@ Below is a detailed list of technologies used:
 
 ### HTML/CSS & Bootstrap
 
-Most of the HTML/CSS code was written in JSX; unless styling in JSX resulted in messy code. 
+Most of the HTML/CSS code was written in JSX. 
+<br />
+
+Upon refactor, all layout and styling will be isolated to each component's scope.
 <br />
 
 - [Bootstrap v5](https://getbootstrap.com/) was utilised as the chosen CSS framework for responsive UI development
@@ -60,10 +63,9 @@ With regards to JavaScript dependencies, the following were installed via NPM:
     + CRA defaults to building one file with the application code in its build process
     + CRACO allowed the updating of build settings of CRA in order to generate two files instead
         * Thereby preventing the need to `npm run eject` the React app
-- [babel-plugin-transform-react-remove-prop-types](https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types) was utilised to remove default propTypes declaration in production via webpack.
-    + This was recommended by [Google Chrome Labs](https://github.com/GoogleChromeLabs/webpack-libs-optimizations#remove-proptypes-declarations-in-production), as a means to reduce production bundle size
-    + See [React.js](https://github.com/jinyoungch0i/circleBack#reactjs) for more detail on implementation with propTypes 
-    + [Additional reading](https://jackleslie.dev/blog/prop-types) on why this Babel plugin was used
+- [babel-plugin-transform-react-remove-prop-types](https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types) was utilised to remove PropTypes declarations in production bundle
+    + This was recommended by [Google Chrome Labs](https://github.com/GoogleChromeLabs/webpack-libs-optimizations#remove-proptypes-declarations-in-production) as a means to eliminate production bloat
+    + (Since PropTypes declarations are only used in the development environment & provides no functionality in a production setting)
 
 ### React.js
 
@@ -71,7 +73,7 @@ React v17 was utilised, with a select number of technologies within the React ec
 
 - [Context API](https://github.com/jinyoungch0i/react-context) was utilised for state management
 - [Hooks](https://reactjs.org/docs/hooks-reference.html) were utilised to access component life cycle methods in functional (vs. class-based) fashion
-- [propTypes]() was utilised to integrate type-checking in components at runtime
+- [PropTypes](https://www.npmjs.com/package/prop-types) was utilised to integrate type-checking in components during runtime
 - [React-Icons](https://react-icons.github.io/react-icons/icons?name=fa) was utilised to selectively import (ES6) Font Awesome icons
 - [React-Router](https://reactrouter.com/) will be incorporated to allow performant routing on the client-side
 
