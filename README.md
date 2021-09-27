@@ -14,7 +14,7 @@ Other than the above target demographics, `circleBack` may also be leveraged as 
 
 `circleBack` can be downloaded via Chrome Web Store, or NPM.
 
-[Download via Chrome Store (coming soon!)](https://chrome.google.com/webstore/category/extensions) | [Install via NPM (coming soon!)](https://www.npmjs.com/search?q=circleback)
+[Download via Chrome Store (🔜)](https://chrome.google.com/webstore/category/extensions) | [Install via NPM (🔜)](https://www.npmjs.com/search?q=circleback)
 
 P.S. Please refer to [changelog](https://github.com/jinyoungch0i/circleBack/tree/main/public/changelog) to follow ongoing UI iterations.
 
