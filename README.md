@@ -1,10 +1,6 @@
-<a href="https://github.com/jinyoungch0i/circleBack">
-<img src="/public/icons/icon32.png" alt="circleBack Logo: 'cB'" title="circleBack logo" width="auto">
-</a> 
-
 # circleBack
 
-<img src="/public/changelog/README_UI.jpeg" alt="circleBack UI demo" title="circleBack UI demo" width="auto">
+<img src="/public/changelog/demo.gif" alt="circleBack UI demo" title="circleBack UI demo" width="auto">
 
 ## Summary
 
