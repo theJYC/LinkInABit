@@ -4,7 +4,7 @@
 
 ## Summary
 
-`circleBack is currently in active development`
+`CURRENTLY IN ACTIVE DEVELOPMENT 🚀`
 
 `circleBack` is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
 
@@ -26,7 +26,7 @@ Below is a detailed list of technologies used:
 
 ### HTML/CSS & Bootstrap
 
-Most of the HTML/CSS code was written in JSX. 
+Most of the HTML/CSS code was written in [JSX](https://reactjs.org/docs/faq-styling.html). 
 <br />
 
 Upon refactor, all layout and styling will be isolated to each component's scope.
