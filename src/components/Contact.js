@@ -1,5 +1,7 @@
 import React from "react"
 
+import PropTypes from "prop-types"
+
 //selectively importing Font Awesome paperplane icon via react-icons
 import { FaRegPaperPlane as ContactInfoIcon } from "react-icons/fa"
 
@@ -129,6 +131,19 @@ const Contact = props => {
             </div>
         </li>
     )
+}
+
+//validating prop types to ensure all props being passed down
+//are meeting their anticipated data types:
+Contact.propTypes = {
+    key: PropTypes.number,
+    company: PropTypes.string.isRequired,
+    contactPhotoURL: PropTypes.string.isRequired,
+    companyLogoURL: PropTypes.string.isRequired,
+    profileURL: PropTypes.string.isRequired,
+    contactInfo: PropTypes.string.isRequired,
+    currentTitle: PropTypes.string.isRequired,
+    companyLinkedIn: PropTypes.string.isRequired,
 }
 
 export default Contact

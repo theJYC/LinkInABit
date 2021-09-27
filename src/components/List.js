@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 //Contact component used as template for each profile:
 import Contact from "./Contact"
@@ -32,5 +33,12 @@ const List = props => {
         </ul>
     )
 }
+
+//validating that List is receiving "contacts" prop, which is of the array data type, and required:
+List.propTypes = {
+    contacts: PropTypes.array.isRequired
+}
+
+//note to self: make sure to modify ^ when chrome API message passing is integrated
 
 export default List
