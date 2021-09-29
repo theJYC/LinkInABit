@@ -1,4 +1,4 @@
-# circleBack for LinkedIn
+# contactBack
 
 <img src="/public/changelog/demo.gif" alt="circleBack UI demo" title="circleBack UI demo" width="auto">
 
@@ -6,15 +6,15 @@
 
 `CURRENTLY IN ACTIVE DEVELOPMENT 🚀`
 
-`circleBack for LinkedIn (or circleBack)` is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
+`contactBack` is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
 
-Given its utility, `circleBack` is **a tool that primarily serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels.\
+Given its utility, `contactBack` is **a tool that primarily serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels.\
 <br />
-Other than the above target demographics, `circleBack` may also be leveraged as a 'networking journal' for any LinkedIn user who could benefit from keeping a more manageable list of LinkedIn connections.
+Other than the above target demographics, `contactBack` may also be leveraged as a 'networking journal' for any LinkedIn user who could benefit from keeping a more manageable list of LinkedIn connections.
 
-`circleBack` can be downloaded via Chrome Web Store, or NPM.
+`contactBack` can be downloaded via Chrome Web Store, or NPM.
 
-[Download via Chrome Store (🔜)](https://chrome.google.com/webstore/category/extensions) | [Install via NPM (🔜)](https://www.npmjs.com/search?q=circleback)
+[Download via Chrome Store (🔜)](https://chrome.google.com/webstore/category/extensions) | [Install via NPM (🔜)](https://www.npmjs.com/search?q=contactBack)
 
 P.S. Please refer to [changelog](https://github.com/jinyoungch0i/circleBack/tree/main/public/changelog) to follow ongoing UI iterations.
 
