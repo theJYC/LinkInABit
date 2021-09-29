@@ -6,7 +6,7 @@
 
 `CURRENTLY IN ACTIVE DEVELOPMENT 🚀`
 
-`contactBack` is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
+`contactBack` (previously `circleBack`) is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
 
 Given its utility, `contactBack` is **a tool that primarily serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels.\
 <br />

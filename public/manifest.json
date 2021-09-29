@@ -1,11 +1,11 @@
 {
-    "name": "circleBack",
+    "name": "contactBack",
     "description": "Chrome Extension for trackable LinkedIn networking",
     "version": "1.0.0",
     "manifest_version": 3,
     "action" : {
         "default_popup": "index.html",
-        "default_title": "Toggle circleBack"
+        "default_title": "Toggle contactBack"
     },
     "icons": {
         "16" : "icons/icon16.png",
