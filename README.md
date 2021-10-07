@@ -6,30 +6,26 @@
 
 `CURRENTLY IN ACTIVE DEVELOPMENT 🚀`
 
-Have you ever found yourself intending to reach out to people you find on LinkedIn, only to forget about them the next day?
+Have you ever found yourself meaning to reach out to people you find on LinkedIn, only to forget about them the next day?
 <br />
 
-`LinkedLater` (previously `circleBack`) is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn profiles.
+`LinkedLater` is a Chrome Extension that allows users to keep an interactive record of LinkedIn profiles on their browser.
 
-While not exclusive, `LinkedLater` can primarily benefit:
+While not exclusively, `LinkedLater` intends to primarily benefit:
 
-- Recruiters: coordinating recruitment pipelines and sharing profiles with the rest of the team,
-- Jobseekers: discovering and reaching out to hiring managers and future colleagues,
-- Salespeople: maintaining sales channels and exploring relevant clientele,
-- etc.!
+- Recruiters-- coordinating candidate pipelines and sharing eligible profiles to the team,
+- Jobseekers-- discovering and reaching out to hiring managers and future colleagues,
+- Salespeople-- maintaining sales channels and scouting out new clientele,
+- and more!
+<br />
 
-
-`LinkedLater` can be downloaded via Chrome Web Store, or NPM.
+`LinkedLater` can be downloaded via Chrome Web Store or NPM.
 
 [Download via Chrome Store (🔜)](https://chrome.google.com/webstore/category/extensions) | [Install via NPM (🔜)](https://www.npmjs.com/search?q=LinkedLater)
 
 P.S. Please refer to [changelog](https://github.com/jinyoungch0i/circleBack/tree/main/public/changelog) to follow ongoing UI iterations.
 
 ## Technologies
-Stack: HTML/CSS, JavaScript, React, Bootstrap, and Chrome APIs.
-<br />
-
-Below is a detailed list of technologies used:
 
 ### HTML/CSS & Bootstrap
 
@@ -62,6 +58,10 @@ The data was stored in the following object form:
         companyLogoURL: "https://some_path_to_company_logo_img",
     }
 ```
+<br />
+
+While most of the heavy-lifting with regards to the game's logic was written in React, JavaScript's ES modules were used to separate layers of concerns whenever possible.
+<br />
 
 With regards to JavaScript dependencies, the following were installed via NPM:
 
@@ -76,13 +76,13 @@ With regards to JavaScript dependencies, the following were installed via NPM:
 
 ### React.js
 
-React v17 was utilised, with a select number of technologies within the React ecosystem: 
+This extension was built with the latest version of React (v17), with a select number of technologies within the React ecosystem: 
 
 - [Context API](https://github.com/jinyoungch0i/react-context) was utilised for state management
-- [Hooks](https://reactjs.org/docs/hooks-reference.html) were utilised to access component life cycle methods in functional (vs. class-based) fashion
-- [PropTypes](https://www.npmjs.com/package/prop-types) was utilised to integrate type-checking in components during runtime
-- [React-Icons](https://react-icons.github.io/react-icons/icons?name=fa) was utilised to selectively import (ES6) Font Awesome icons
-- [React-Router](https://reactrouter.com/) will be incorporated to allow performant routing on the client-side
+- [Hooks](https://reactjs.org/docs/hooks-reference.html) were utilised to access component life cycle methods in declarative fashion
+- [PropTypes](https://www.npmjs.com/package/prop-types) was utilised to integrate type-checking in components at runtime
+- [React-Icons](https://react-icons.github.io/react-icons/icons?name=fa) was utilised to selectively import (ES6) Font Awesome icons, preventing production bloat
+- [React-Router](https://reactrouter.com/) will be incorporated to allow performant SPA routing
 
 ### Chrome APIs
 
