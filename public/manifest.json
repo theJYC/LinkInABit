@@ -20,5 +20,5 @@
             "matches": ["http://www.linkedin.com/in/*", "https://www.linkedin.com/in/*"],
             "js": ["./static/js/content.js"]
         }
-    ],
+    ]
 }
