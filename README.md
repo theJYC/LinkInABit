@@ -6,11 +6,18 @@
 
 `CURRENTLY IN ACTIVE DEVELOPMENT 🚀`
 
-`LinkedLater` (previously `circleBack`) is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
-
-Given its utility, `LinkedLater` is **a tool that primarily serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels.\
+Have you ever found yourself intending to reach out to people you find on LinkedIn, only to forget about them the next day?
 <br />
-Other than the above target demographics, `LinkedLater` may also be leveraged as a 'networking journal' for any LinkedIn user who could benefit from keeping a more manageable list of LinkedIn connections.
+
+`LinkedLater` (previously `circleBack`) is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn profiles.
+
+While not exclusive, `LinkedLater` can primarily benefit:
+
+- Recruiters: coordinating recruitment pipelines and sharing profiles with the rest of the team,
+- Jobseekers: discovering and reaching out to hiring managers and future colleagues,
+- Salespeople: maintaining sales channels and exploring relevant clientele,
+- etc.!
+
 
 `LinkedLater` can be downloaded via Chrome Web Store, or NPM.
 
@@ -79,6 +86,6 @@ React v17 was utilised, with a select number of technologies within the React ec
 
 ### Chrome APIs
 
-`circleBack` requires the interaction between its two content scripts, for which the following APIs were utilised:
+`LinkedLater` requires the interaction between its two content scripts, for which the following APIs were utilised:
 - [chrome.storage](https://developer.chrome.com/docs/extensions/reference/storage/) to save LinkedIn contacts locally
 - [chrome.runtime](https://developer.chrome.com/docs/extensions/mv3/messaging/#simple) to relay data from LinkedIn profile to the extension's popup window
