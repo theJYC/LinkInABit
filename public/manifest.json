@@ -12,9 +12,9 @@
         "48" : "icons/icon192.png",
         "128" : "icons/icon512.png"
     },
-    "permissions": {
+    "permissions": [
         "activeTab"
-    },
+    ],
     "content_scripts": [
         {
             "matches": ["http://www.linkedin.com/in/*", "https://www.linkedin.com/in/*"],
