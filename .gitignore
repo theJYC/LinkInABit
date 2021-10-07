@@ -25,5 +25,5 @@ yarn-error.log*
 # ideas
 iterations.md
 
-# scraper
-src/circleBack.js
+# files that are unstable & hence ignored:
+src/linkedInLater.js

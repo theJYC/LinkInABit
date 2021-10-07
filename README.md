@@ -1,20 +1,20 @@
-# contactBack
+# LinkedInLater
 
-<img src="/public/changelog/demo.gif" alt="circleBack UI demo" title="circleBack UI demo" width="auto">
+<img src="/public/changelog/demo.gif" alt="LinkedInLater UI demo" title="LinkedInLater UI demo" width="auto">
 
 ## Summary
 
 `CURRENTLY IN ACTIVE DEVELOPMENT 🚀`
 
-`contactBack` (previously `circleBack`) is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
+`LinkedInLater` (previously `circleBack`) is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
 
-Given its utility, `contactBack` is **a tool that primarily serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels.\
+Given its utility, `LinkedInLater` is **a tool that primarily serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels.\
 <br />
-Other than the above target demographics, `contactBack` may also be leveraged as a 'networking journal' for any LinkedIn user who could benefit from keeping a more manageable list of LinkedIn connections.
+Other than the above target demographics, `LinkedInLater` may also be leveraged as a 'networking journal' for any LinkedIn user who could benefit from keeping a more manageable list of LinkedIn connections.
 
-`contactBack` can be downloaded via Chrome Web Store, or NPM.
+`LinkedInLater` can be downloaded via Chrome Web Store, or NPM.
 
-[Download via Chrome Store (🔜)](https://chrome.google.com/webstore/category/extensions) | [Install via NPM (🔜)](https://www.npmjs.com/search?q=contactBack)
+[Download via Chrome Store (🔜)](https://chrome.google.com/webstore/category/extensions) | [Install via NPM (🔜)](https://www.npmjs.com/search?q=LinkedInLater)
 
 P.S. Please refer to [changelog](https://github.com/jinyoungch0i/circleBack/tree/main/public/changelog) to follow ongoing UI iterations.
 
@@ -37,7 +37,7 @@ Upon refactor, all layout and styling will be isolated to each component's scope
 
 ### JavaScript
 
-JavaScript (ES6) was used to grab key data from a LinkedIn profile page, which was then relayed to the extension's popup window (see [Chrome APIs](https://github.com/jinyoungch0i/circleBack#chrome-apis))
+JavaScript (ES6) was used to collect relevant metadata from desired LinkedIn profiles, which was then relayed to the extension's popup window (see [Chrome APIs](https://github.com/jinyoungch0i/circleBack#chrome-apis))
 <br/>
 
 The data was stored in the following object form:
