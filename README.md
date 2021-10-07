@@ -1,20 +1,20 @@
-# LinkedInLater
+# LinkedLater
 
-<img src="/public/changelog/demo.gif" alt="LinkedInLater UI demo" title="LinkedInLater UI demo" width="auto">
+<img src="/public/changelog/demo.gif" alt="LinkedLater UI demo" title="LinkedLater UI demo" width="auto">
 
 ## Summary
 
 `CURRENTLY IN ACTIVE DEVELOPMENT 🚀`
 
-`LinkedInLater` (previously `circleBack`) is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
+`LinkedLater` (previously `circleBack`) is a Chrome Extension that allows users to keep an accessible record of desired LinkedIn contacts.
 
-Given its utility, `LinkedInLater` is **a tool that primarily serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels.\
+Given its utility, `LinkedLater` is **a tool that primarily serves recruiters, job hunters, and salespeople** who rely on LinkedIn as a platform to maintain their networking channels.\
 <br />
-Other than the above target demographics, `LinkedInLater` may also be leveraged as a 'networking journal' for any LinkedIn user who could benefit from keeping a more manageable list of LinkedIn connections.
+Other than the above target demographics, `LinkedLater` may also be leveraged as a 'networking journal' for any LinkedIn user who could benefit from keeping a more manageable list of LinkedIn connections.
 
-`LinkedInLater` can be downloaded via Chrome Web Store, or NPM.
+`LinkedLater` can be downloaded via Chrome Web Store, or NPM.
 
-[Download via Chrome Store (🔜)](https://chrome.google.com/webstore/category/extensions) | [Install via NPM (🔜)](https://www.npmjs.com/search?q=LinkedInLater)
+[Download via Chrome Store (🔜)](https://chrome.google.com/webstore/category/extensions) | [Install via NPM (🔜)](https://www.npmjs.com/search?q=LinkedLater)
 
 P.S. Please refer to [changelog](https://github.com/jinyoungch0i/circleBack/tree/main/public/changelog) to follow ongoing UI iterations.
 
@@ -59,7 +59,7 @@ The data was stored in the following object form:
 With regards to JavaScript dependencies, the following were installed via NPM:
 
 - [CRACO](https://www.npmjs.com/package/@craco/craco) was utilised to override default [Create React App (CRA)](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) configurations
-    + This was crucial for `circleBack` given its interaction between multiple JS files
+    + This was crucial for `LinkedLater` given its interaction between multiple JS files
     + CRA defaults to building one file with the application code in its build process
     + CRACO allowed the updating of build settings of CRA in order to generate two files instead
         * Thereby preventing the need to `npm run eject` the React app

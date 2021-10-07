@@ -1,11 +1,11 @@
 {
-    "name": "LinkedInLater",
+    "name": "LinkedLater",
     "description": "Chrome Extension for trackable LinkedIn networking",
     "version": "1.0.0",
     "manifest_version": 3,
     "action" : {
         "default_popup": "index.html",
-        "default_title": "Toggle LinkedInLater"
+        "default_title": "Toggle LinkedLater"
     },
     "icons": {
         "16" : "icons/icon16.png",
