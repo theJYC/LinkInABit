@@ -60,6 +60,7 @@ const Contact = props => {
                     href={props.profileURL}
                     target="_blank"
                     rel="noreferrer noopener"
+                    aria-label="Go to Profile"
                 >
                     {props.name}
                 </a>
