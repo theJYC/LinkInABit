@@ -9,13 +9,13 @@ const Header = () => {
 
     //style object for the "cB" logo next to circleBack title
     const headerLogoStyle = {
-        height: 32
+        height: 28
     }
 
     //style object to fix the font-size of "circleBack",
     //overriding Bootstrap's default responsive behaviour
     const fixedHeaderFontStyle = {
-        fontSize: "27.75px"
+        fontSize: "22.75px"
     }
 
 
@@ -31,7 +31,7 @@ const Header = () => {
                     src={logo}
                     alt="circleBack logo"
                     style={headerLogoStyle}
-                    className="d-flex pt-1 me-1"
+                    className="d-flex pt-0 me-1"
                 />
 
                 <h1
@@ -41,7 +41,7 @@ const Header = () => {
                 </h1>
             </div>
 
-            <div className="container d-flex flex-direction-row justify-content-end">
+            <div className="container d-flex flex-direction-row justify-content-end pb-1">
 
                 {/* clickable "add contact" icon to initiate scraping of the LinkedIn profile page */}
                 <a
@@ -49,8 +49,8 @@ const Header = () => {
                 >
                     {/* icon: fa-user imported from fontawesome */}
                     <AddContactIcon
-                        size="27.5"
-                        className="d-flex me-4 mb-1 link-success text-decoration-none"
+                        size="25.5"
+                        className="d-flex me-3 mb-1 link-success text-decoration-none"
                     />
                 </a>
                 {/* clickable "export profiles" icon to initiate generation of profiles.html file */}
@@ -59,8 +59,8 @@ const Header = () => {
                 >
                     {/* icon: fa-share-square imported from fontawesome */}
                     <ExportProfilesListIcon
-                        size="27.5"
-                        className="d-flex me-2 link-primary text-decoration-none"
+                        size="25.5"
+                        className="d-flex me-0 link-primary text-decoration-none"
                     />
                 </a>
             </div>

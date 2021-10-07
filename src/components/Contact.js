@@ -9,16 +9,15 @@ const Contact = props => {
 
     //resize to ~50% dimension of contactPhoto
     const companyLogo = {
-        width: 40,
-        marginRight: 0
+        width: 27.5,
     }
 
     const contactPhotoStyle = {
-        width: 150,
+        width: 115,
     }
 
     const nameStyle = {
-        padding: 2.5,
+        padding: 3.5,
         textDecoration: "none",
         color: "black",
         fontWeight: "normal",
@@ -26,17 +25,15 @@ const Contact = props => {
 
     //checkbox to override default Bootstrap marginTop, and tailouring square sizing
     const checkBoxStyle = {
-        width: 32,
-        height: 32,
-        //marginTop is set to 1 (vs 0) in order to best align with contact icon (paper aeroplane)
-        marginTop: 1,
+        width: 25,
+        height: 25,
     }
 
     return (
         <li className="list-group-item d-flex flex-row">
         {/* two column layout: photo & logo | name & title and contact icon & checkbox */}
             <div
-                className="d-flex flex-column col-4 gap-3"
+                className="d-flex flex-column col-4 mt-2"
             >
                 {/* profile picture as shown on in/profile link */}
                 <a
@@ -54,7 +51,7 @@ const Contact = props => {
             </div>
 
             <div
-                className="d-flex flex-column col-8"
+                className="d-flex flex-column col-8 mt-2"
             >
                 {/* hyperlink to profile link on fullName */}
                 <a
@@ -77,7 +74,7 @@ const Contact = props => {
                 >
                     @
                 </p>
-                <div className="d-flex flex-direction-row justify-content-center me-4">
+                <div className="d-flex flex-direction-row justify-content-center">
                     {/* clickable company logo */}
                     <a
                         href={props.companyLinkedIn}
@@ -88,13 +85,14 @@ const Contact = props => {
                             style={companyLogo}
                             src={props.companyLogoURL}
                             alt={props.fullName}
-                            className="rounded me-3"
+                            className="rounded me-2 mt-1"
                         />
                     </a>
                     {/* clickable companyName hyperlink */}
                     <a
                         href={props.companyLinkedIn}
                         className="d-flex justify-content-center text-primary text-decoration-none mt-1"
+                        style={{fontSize: 15}}
                         target="_blank"
                         rel="noreferrer noopener"
                     >
@@ -105,7 +103,7 @@ const Contact = props => {
                 </div>
                 {/* div to hold contact icon and checkbox */}
                 <div
-                    className="d-flex flex-direction-row justify-content-evenly pt-3 pb-2 me-2"
+                    className="d-flex flex-direction-row justify-content-evenly pt-1 pb-1"
                 >
                     {/* clickable contact-info (paper aeroplane) icon */}
                     <a
@@ -115,8 +113,8 @@ const Contact = props => {
                         rel="noreferrer noopener"
                     >
                         <ContactInfoIcon
-                            size="32"
-                            className="d-flex justify-content-center text-decoration-none"
+                            size="25"
+                            className="d-flex justify-content-center text-decoration-none mt-1"
                         />
                     </a>
                     {/* checkbox to indicate followed-up/not */}
