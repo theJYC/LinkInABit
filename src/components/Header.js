@@ -15,7 +15,7 @@ const Header = () => {
     //style object to fix the font-size of "circleBack",
     //overriding Bootstrap's default responsive behaviour
     const fixedHeaderFontStyle = {
-        fontSize: "28.75px"
+        fontSize: "27.75px"
     }
 
 
