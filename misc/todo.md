@@ -11,3 +11,7 @@ This will smoothen out the UX and make it more elegant.
 ### Conditionally render favicon badge to indicate whether the person is on a LinkedIn profile or not
 
 This will enhance UX-- maybe the favicon shown the logo + green background when they are, and it's logo + gray when they're not (and on default)
+
+### Brainstorm different ways to present footer
+
+Maybe a logo & link to buy me a coffee page, or simply to the github repository with the github favicon
