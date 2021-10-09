@@ -2,7 +2,7 @@
 
 <img src="/public/changelog/demo.gif" alt="LinkInABit UI demo" title="LinkInABit UI demo" width="auto">
 
-## ☝🏻 Summary
+## ✊🏻 Summary
 
 Have you ever found yourself meaning to reach out to people you find on LinkedIn, **only to lose track of them the next day?**
 <br />
@@ -19,11 +19,42 @@ While not exclusively, `LinkInABit` aims to primarily benefit:
 - and more!
 <br />
 
+## ☝🏻 Installation
+
 `LinkInABit` can be downloaded via Chrome Web Store:
 
 [Download here (Coming Soon!)](https://chrome.google.com/webstore/category/extensions)
 
-## ✌🏻 Technologies
+## ✌🏻 Directory Map
+
+The repository is organised as the below (simplified) tree structure:
+
+```
+root
+│   README.md (📍 you are here)
+│   craco.config.js [0]
+│   LICENSE [1]
+│
+└───🗂 public
+│   │   index.html
+│   └───🗂 changelog [2]
+│
+└───🗂 src
+│   │   App.js
+│   │   index.js
+│   │   contactsData.js [3]
+│   │
+
+```
+
+### Index
+
+- `[0]`: Module that configures the build process for the `LinkInABit` extension.
+- `[1]`: Module that contains `LinkInABit`'s Open Source Software (OSS) License ([MIT](https://simple.wikipedia.org/wiki/MIT_License)) 🥳
+- `[2]`: Directory that chronicles `LinkInABit`'s UI iterations.
+- `[3]`: Module that demonstrates sample data structure for the extracted LinkedIn profile's metadata.
+
+## 🖖🏻 Technologies
 
 `CURRENTLY IN ACTIVE DEVELOPMENT 🚀`
 
