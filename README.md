@@ -14,7 +14,7 @@ Or have you ever had 15 different tabs open on your browser, each for different 
 While not exclusively, `LinkInABit` aims to primarily benefit:
 
 - Recruiters-- coordinating candidate pipelines and sharing eligible profiles to the team,
-- Jobseekers-- discovering and reaching out to hiring managers and future colleagues at companies,
+- Jobseekers-- discovering and reaching out to hiring managers and colleagues at future companies,
 - Salespersons-- maintaining sales channels and "bookmarking" new clientele,
 - and more!
 <br />
@@ -23,36 +23,44 @@ While not exclusively, `LinkInABit` aims to primarily benefit:
 
 `LinkInABit` can be downloaded via Chrome Web Store:
 
-[Download here (Coming Soon!)](https://chrome.google.com/webstore/category/extensions)
+[Download here](https://chrome.google.com/webstore/category/extensions)
 
 ## ✌🏻 Directory Map
 
 The repository is organised as the below (simplified) tree structure:
 
 ```
-root
+:root
 │   README.md (📍 you are here)
 │   craco.config.js [0]
 │   LICENSE [1]
 │
-└───🗂 public
+└───🗂 /public
 │   │   index.html
 │   └───🗂 changelog [2]
 │
-└───🗂 src
+└───🗂 /src
 │   │   App.js
 │   │   index.js
 │   │   contactsData.js [3]
-│   │
-
+│   │ 
+│   └───🗂 /components
+│   │   │   Contact.js
+│   │   │   Header.js
+│   │   │   List.js
+│   │   │   Footer.js
+│   │   │
+│   └───🗂 /chrome [4]
+│   │   │   ...
 ```
 
 ### Index
 
 - `[0]`: Module that configures the build process for the `LinkInABit` extension.
-- `[1]`: Module that contains `LinkInABit`'s Open Source Software (OSS) License ([MIT](https://simple.wikipedia.org/wiki/MIT_License)) 🥳
+- `[1]`: Module that contains `LinkInABit`'s [MIT](https://simple.wikipedia.org/wiki/MIT_License) Open Source Software ([OSS](https://www.linuxfoundation.org/blog/what-is-open-source-software/)) License 🥳
 - `[2]`: Directory that chronicles `LinkInABit`'s UI iterations.
 - `[3]`: Module that demonstrates sample data structure for the extracted LinkedIn profile's metadata.
+- `[4]`: Directory that holds the logic for communicating extrated data from LinkedIn Profile to extension's popup HTML.
 
 ## 🖖🏻 Technologies
 
