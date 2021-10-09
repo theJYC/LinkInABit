@@ -5,7 +5,7 @@ module.exports = {
                ...webpackConfig,
                entry: {
                    main: [env === 'development' && require.resolve('react-dev-utils/webpackHotDevClient'),paths.appIndexJs].filter(Boolean),
-                   content: './src/linkedLater.js',
+                   content: './src/chrome/linkInABit.js',
                },
                output: {
                    ...webpackConfig.output,

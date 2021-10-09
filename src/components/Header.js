@@ -37,7 +37,7 @@ const Header = () => {
                 <h1
                     style={fixedHeaderFontStyle}
                 >
-                    LinkedLater
+                    LinkInABit
                 </h1>
             </div>
 
