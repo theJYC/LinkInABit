@@ -26,4 +26,4 @@ yarn-error.log*
 iterations.md
 
 # files that are unstable & hence ignored:
-src/linkedInLater.js
+src/chrome
