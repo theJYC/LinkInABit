@@ -4,18 +4,19 @@
 
 ## Summary
 
-Have you ever found yourself meaning to reach out to people you find on LinkedIn, only to forget about them the next day?
+Have you ever found yourself meaning to reach out to people you find on LinkedIn, only to lose track of them the next day?
 <br />
 
-Or, have you ever had 15 different tabs open on your browser, each consisting of different LinkedIn profiles, only to lose access to them all when you exit the browser?
+Or have you ever had 15 different tabs open on your browser, each for different LinkedIn profiles, only to lose them all when you exit your browser?
 
 `LinkInABit` is a Chrome Extension that gives LinkedIn profiles its designated real estate on your browser.  
+<br />
 
-While not exclusively, `LinkInABit` intends to primarily benefit:
+While not exclusively, `LinkInABit` aims to primarily benefit:
 
 - Recruiters-- coordinating candidate pipelines and sharing eligible profiles to the team,
-- Jobseekers-- discovering and reaching out to hiring managers and future colleagues,
-- Salespeople-- maintaining sales channels and scouting out new clientele,
+- Jobseekers-- discovering and reaching out to hiring managers and future colleagues at prospective companies,
+- Salespersons-- maintaining sales channels and "bookmarking" new clientele,
 - and more!
 <br />
 
@@ -23,9 +24,9 @@ While not exclusively, `LinkInABit` intends to primarily benefit:
 
 [Download here (🔜)](https://chrome.google.com/webstore/category/extensions)
 
-`CURRENTLY IN ACTIVE DEVELOPMENT 🚀`
-
 ## Technologies
+
+`CURRENTLY IN ACTIVE DEVELOPMENT 🚀`
 
 ### HTML/CSS & Bootstrap
 
@@ -40,7 +41,7 @@ Upon refactor, all layout and styling will be isolated to each component's scope
 
 ### JavaScript
 
-JavaScript (ES6) was used to collect relevant metadata from desired LinkedIn profiles, which was then relayed to the extension's popup window (see [Chrome APIs](https://github.com/jinyoungch0i/circleBack#chrome-apis))
+JavaScript (ES6) was used to extract relevant metadata from desired LinkedIn profiles, which was then relayed to the extension's popup window (see [Chrome APIs](https://github.com/jinyoungch0i/circleBack#chrome-apis))
 <br/>
 
 The data was stored in the following object form:
@@ -60,7 +61,7 @@ The data was stored in the following object form:
 ```
 <br />
 
-While most of the heavy-lifting with regards to the game's logic was written in React, JavaScript's ES modules were used to separate layers of concerns whenever possible.
+While most of the heavy-lifting with regards to the game's logic was written in React, JavaScript's [ES modules](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/) were used to separate layers of concerns whenever possible.
 <br />
 
 With regards to JavaScript dependencies, the following were installed via NPM:
@@ -68,10 +69,10 @@ With regards to JavaScript dependencies, the following were installed via NPM:
 - [CRACO](https://www.npmjs.com/package/@craco/craco) was utilised to override default [Create React App (CRA)](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app) configurations
     + This was crucial for `LinkInABit` given its interaction between multiple JS files
     + CRA defaults to building one bundled file with the application code in its build process
-    + CRACO allowed the updating of build settings of CRA in order to generate two files that are integral for `LinkInABit`'s functionality
-- [babel-plugin-transform-react-remove-prop-types](https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types) was utilised to remove PropTypes declarations in production bundle
+    + CRACO allowed the reconfiguring of CRA's build settings in order to generate two build modules that are integral for `LinkInABit`'s functionality
+- [babel-plugin-transform-react-remove-prop-types](https://www.npmjs.com/package/babel-plugin-transform-react-remove-prop-types) was utilised to prevent the PropTypes dependency from being included in production bundle
     + This was recommended by [Google Chrome Labs](https://github.com/GoogleChromeLabs/webpack-libs-optimizations#remove-proptypes-declarations-in-production) as a means to eliminate production bloat
-    + (Since PropTypes declarations are only used in the development environment & provides no functionality in a production setting)
+    + (Since type validation via PropTypes is only used in the development environment & provides no utility in production setting)
 
 ### React.js
 
