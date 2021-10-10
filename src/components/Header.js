@@ -21,7 +21,8 @@ const Header = () => {
 
     return (
         <header
-            className="d-flex bg-dark text-white flex-direction-row align-items-center justify-content-between"
+            className="d-flex text-white flex-direction-row align-items-center justify-content-between"
+            style={{backgroundColor:'#3c3f42'}}
         >
             {/* container to hold extension's logo "cB" and title "circleBack" respectively */}
             <div className="container d-flex flex-direction-row justify-content-start">
@@ -33,12 +34,16 @@ const Header = () => {
                     style={headerLogoStyle}
                     className="d-flex pt-0 me-1"
                 />
-
-                <h1
-                    style={fixedHeaderFontStyle}
+                <a
+                    href="."
+                    className="text-decoration-none text-white"
                 >
-                    LinkInABit
-                </h1>
+                    <h1
+                        style={fixedHeaderFontStyle}
+                    >
+                        LinkInABit
+                    </h1>
+                </a>
             </div>
 
             <div className="container d-flex flex-direction-row justify-content-end pb-1">

@@ -67,6 +67,32 @@ const Profile = props => {
                         style={contactPhotoStyle}
                     />
                 </a>
+                {/* div to hold contact icon and checkbox */}
+                <div
+                    className="d-flex flex-direction-row justify-content-evenly pt-2 pb-1"
+                >
+                    {/* checkbox to indicate followed-up/not */}
+                    <input
+                        style={checkBoxStyle}
+                        className="form-check-input ms-3 me-4"
+                        type="checkbox"
+                        checked={isProfileChecked}
+                        onChange={toggleCheckbox}
+                        id="flexCheckDefault"
+                    />
+                    {/* clickable contact-info (paper aeroplane) icon */}
+                    <a
+                        href={props.contactInfo}
+                        className="text-secondary"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        <ContactInfoIcon
+                            size="25"
+                            className="d-flex justify-content-center text-decoration-none mt-1"
+                        />
+                    </a>
+                </div>
             </div>
 
             <div
@@ -120,32 +146,6 @@ const Profile = props => {
                             {props.company}
                         </p>
                     </a>
-                </div>
-                {/* div to hold contact icon and checkbox */}
-                <div
-                    className="d-flex flex-direction-row justify-content-evenly pt-1 pb-1"
-                >
-                    {/* clickable contact-info (paper aeroplane) icon */}
-                    <a
-                        href={props.contactInfo}
-                        className="text-secondary"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                    >
-                        <ContactInfoIcon
-                            size="25"
-                            className="d-flex justify-content-center text-decoration-none mt-1"
-                        />
-                    </a>
-                    {/* checkbox to indicate followed-up/not */}
-                    <input
-                        style={checkBoxStyle}
-                        className="form-check-input"
-                        type="checkbox"
-                        checked={isProfileChecked}
-                        onChange={toggleCheckbox}
-                        id="flexCheckDefault"
-                    />
                 </div>
             </div>
         </li>
