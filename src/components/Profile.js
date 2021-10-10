@@ -43,6 +43,11 @@ const Profile = props => {
         return setIsProfileChecked(prevState => !prevState)
     }
 
+    //conditionally rendering texts for profiles that are / are not checked:
+    const profileCheckedOrNot = () => {
+        return isProfileChecked ? "text-decoration-line-through fst-italic" : ""
+    }
+
     return (
         <li className="list-group-item d-flex flex-row">
         {/* two column layout: photo & logo | name & title and contact icon & checkbox */}
@@ -65,7 +70,7 @@ const Profile = props => {
             </div>
 
             <div
-                className="d-flex flex-column col-8 mt-2"
+                className={`d-flex flex-column col-8 mt-2 ${profileCheckedOrNot()}`}
             >
                 {/* hyperlink to profile link on fullName */}
                 <a
