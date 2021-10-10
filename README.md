@@ -1,4 +1,4 @@
-# LinkInABit 👋🏻
+# 👋🏻 LinkInABit
 
 <img src="/public/changelog/demo.gif" alt="LinkInABit UI demo" title="LinkInABit UI demo" width="auto">
 
@@ -9,13 +9,13 @@ Have you ever found yourself meaning to reach out to people you find on LinkedIn
 
 Or have you ever had 15 different tabs open on your browser, each for different LinkedIn profiles, **only to lose them all when you exit your browser?**
 
-`LinkInABit` is a Chrome Extension that gives LinkedIn profiles its designated real estate on your browser.  
+`LinkInABit` is **a Chrome Extension that gives LinkedIn profiles their designated real estate on your browser**.  
 <br />
 While not exclusively, `LinkInABit` aims to primarily benefit:
 
-- Recruiters-- coordinating candidate pipelines and sharing eligible profiles to the team,
-- Jobseekers-- discovering and reaching out to hiring managers and colleagues at future companies,
-- Salespersons-- maintaining sales channels and "bookmarking" new clientele,
+- Recruiters-- **coordinating candidate pipelines** and **sharing eligible profiles to the team**,
+- Jobseekers-- **discovering and reaching out** to **hiring managers** and **colleagues at future companies**,
+- Salespersons-- maintaining sales channels and **"bookmarking" new clientele**,
 - and more!
 <br />
 
