@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 
 //importing top-level components to arrange App.js as "index":
 import Header from "./components/Header"
@@ -12,12 +12,22 @@ import contactsData from "./contactsData.js"
 
 const App = () => {
 
+    //state to store profiles sent via chrome message api:
+    const [profiles, setProfiles] = useState([])
+
+    //querying the
+    useEffect(() => {
+        //until chrome messaging is set, allow demo data to be set into state:
+        setProfiles(contactsData)
+
+    },[])
+
     return (
         <div
             className="ms-0 me-0"
         >
             <Header />
-            <List contacts={contactsData}/>
+            <List profiles={profiles}/>
             <Footer />
         </div>
     )
