@@ -5,6 +5,9 @@ import PropTypes from "prop-types"
 //selectively importing Font Awesome paperplane icon via react-icons
 import { FaRegPaperPlane as ContactInfoIcon } from "react-icons/fa"
 
+import { IoClose as DeleteProfileIcon } from "react-icons/io5";
+
+
 const Profile = props => {
 
     //resize to ~50% dimension of contactPhoto
@@ -48,9 +51,21 @@ const Profile = props => {
         return isProfileChecked ? "text-decoration-line-through fst-italic" : ""
     }
 
+    //placeholder for function that removes selected profile from list of profiles:
+    const removeProfileFromList = () => {
+        return console.log("clicked")
+    }
+
     return (
-        <li className="list-group-item d-flex flex-row">
-        {/* two column layout: photo & logo | name & title and contact icon & checkbox */}
+        <li className="list-group-item d-flex flex-row border rounded-3 ">
+            <div className="mt-0 be-5">
+                <DeleteProfileIcon
+                    size="14"
+                    className="d-flex justify-content-center text-decoration-none text-secondary"
+                    onClick={removeProfileFromList}
+                />
+            </div>
+            {/* two column layout: profilePhoto, checkBox & conact icon | name, position, companyLogo */}
             <div
                 className="d-flex flex-column col-4 mt-2"
             >
