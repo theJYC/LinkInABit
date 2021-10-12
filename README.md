@@ -1,6 +1,6 @@
 # 👋🏻 LinkInABit
 
-<img src="/public/changelog/demo.gif" alt="LinkInABit UI demo" title="LinkInABit UI demo" width="auto">
+<img src="public/changelog/ui_11_text-truncated.png" alt="LinkInABit UI demo" title="LinkInABit UI demo" width="auto">
 
 ## ✊🏻 Summary
 
