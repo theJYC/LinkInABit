@@ -152,8 +152,8 @@ const Profile = props => {
                             <img
                                 style={companyLogo}
                                 src={props.companyLogoURL}
-                                alt={props.fullName}
-                                className="rounded mt-1"
+                                alt={props.company}
+                                className="rounded mt-1 ms-1"
                             />
                         </a>
                     </div>
