@@ -58,16 +58,18 @@ const Profile = props => {
 
     return (
         <li className="list-group-item d-flex flex-row border rounded-3 ">
-            <div className="mt-0 be-5">
+        {/* three column layout: close (x) icon | profilePhoto, checkBox & contact icon | name, position, companyLogo */}
+            {/*first col: close (x) icon*/}
+            <div className="mt-0">
                 <DeleteProfileIcon
                     size="14"
                     className="d-flex justify-content-center text-decoration-none text-secondary"
                     onClick={removeProfileFromList}
                 />
             </div>
-            {/* two column layout: profilePhoto, checkBox & conact icon | name, position, companyLogo */}
+            {/*second col: profile photo, checkBox & contact icon*/}
             <div
-                className="d-flex flex-column col-4 mt-2"
+                className="d-flex flex-column col-4 mt-2 me-3"
             >
                 {/* profile picture as shown on in/profile link */}
                 <a
@@ -109,58 +111,67 @@ const Profile = props => {
                     </a>
                 </div>
             </div>
-
+            {/*third col: name, position, companyLogo*/}
             <div
-                className={`d-flex flex-column col-8 mt-2 ${profileCheckedOrNot()}`}
+                className={`d-flex flex-column align-items-center col-8 mt-2 ${profileCheckedOrNot()}`}
             >
-                {/* hyperlink to profile link on fullName */}
-                <a
-                    style={nameStyle}
-                    className="d-flex align-items-start justify-content-center"
-                    href={props.profileURL}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label="Go to Profile"
-                >
-                    {props.name}
-                </a>
+                <div className="d-flex justify-content-center col-6">
+                    {/* hyperlink to profile link on fullName */}
+                    <a
+                        style={nameStyle}
+                        className="d-inline-block text-truncate col-12"
+                        href={props.profileURL}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        aria-label="Go to Profile"
+                    >
+                        {props.name}
+                    </a>
+                </div>
+                <div className="d-flex justify-content-center col-8">
                 {/*para tag to display profile's title/position */}
                 <p
-                    className="d-flex justify-content-center text-secondary"
+                    className="d-inline-block text-truncate text-secondary col-12"
                 >
                     {props.currentTitle}
                 </p>
+                </div>
                 <p
                     className="d-flex justify-content-center text-secondary"
                 >
                     @
                 </p>
-                <div className="d-flex flex-direction-row justify-content-center">
+                <div className="d-flex flex-direction-row justify-content-evenly col-9">
                     {/* clickable company logo */}
-                    <a
-                        href={props.companyLinkedIn}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                    >
-                        <img
-                            style={companyLogo}
-                            src={props.companyLogoURL}
-                            alt={props.fullName}
-                            className="rounded me-2 mt-1"
-                        />
-                    </a>
+                    <div className="col-2">
+                        <a
+                            href={props.companyLinkedIn}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+                            <img
+                                style={companyLogo}
+                                src={props.companyLogoURL}
+                                alt={props.fullName}
+                                className="rounded mt-1"
+                            />
+                        </a>
+                    </div>
                     {/* clickable companyName hyperlink */}
-                    <a
-                        href={props.companyLinkedIn}
-                        className="d-flex justify-content-center text-primary text-decoration-none mt-1"
-                        style={{fontSize: 15}}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                    >
-                        <p>
-                            {props.company}
-                        </p>
-                    </a>
+                    <div className="col-6">
+                        <a
+                            href={props.companyLinkedIn}
+                            className="d-flex justify-content-center text-primary text-decoration-none mt-1 col-12"
+                            style={{fontSize: 15}}
+                            target="_blank"
+                            rel="noreferrer noopener"
+                        >
+
+                                <p className="d-inline-block text-truncate text-primary">
+                                    {props.company}
+                                </p>
+                        </a>
+                    </div>
                 </div>
             </div>
         </li>
