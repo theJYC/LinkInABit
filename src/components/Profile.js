@@ -137,11 +137,11 @@ const Profile = props => {
                 </p>
                 </div>
                 <p
-                    className="d-flex justify-content-center text-secondary"
+                    className="d-flex justify-content-center text-secondary me-3"
                 >
                     @
                 </p>
-                <div className="d-flex flex-direction-row justify-content-evenly col-9">
+                <div className="d-flex flex-direction-row justify-content-evenly col-9 me-3">
                     {/* clickable company logo */}
                     <div className="col-2">
                         <a
@@ -153,7 +153,7 @@ const Profile = props => {
                                 style={companyLogo}
                                 src={props.companyLogoURL}
                                 alt={props.company}
-                                className="rounded mt-1 ms-1"
+                                className="rounded mt-1 ms-2"
                             />
                         </a>
                     </div>
