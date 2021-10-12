@@ -1,5 +1,7 @@
 import React from "react"
 
+import {FaLinkedin as LinkedInIcon} from "react-icons/fa"
+
 const Footer = () => {
     return (
         <footer
@@ -11,7 +13,7 @@ const Footer = () => {
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noreferrer noopener"
-            ><i className="text-warning fw-bold">↻</i> Go to LinkedIn</a>
+            ><i className="text-warning fw-bold">↻</i> LinkedIn<LinkedInIcon size="17" color="#0072b1" className="ms-1 mb-1"/></a>
         </footer>
     )
 }
